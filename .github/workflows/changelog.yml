@@ -25,7 +25,7 @@ jobs:
       run: gem install github_changelog_generator
       
     - name: Gen changelog
-      run: github_changelog_generator -t ${{ secrets.GITHUB_TOKEN }} -u casbin -p casbin
+      run: github_changelog_generator -t ${{ secrets.GITHUB_TOKEN }} -u casbin -p casbin-rs
       
     - name: Commit changes
       uses: stefanzweifel/git-auto-commit-action@v4
